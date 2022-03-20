@@ -1,0 +1,39 @@
+<html lang="en">
+  <head>
+  {{>headerlinks}} 
+  </head>
+  <body>
+    <!--HEADER-->
+
+ {{>navbar}}
+    <!--BODY-->
+
+    <div class="container-fluid main_header">
+      <div class="row">
+        <div class="col-md-10 col-12 mx-auto">
+          <div class="row">
+            <div class="col-md-6 col-12 main_header_left">
+              <p style="color: red;">Oooopsy Daisy..</p>
+              <h1>
+              {{errorMsg}}
+              </h1>
+              <a href="/weather"><button class="btn btn-warning">Weather me</button></a>
+            </div>
+            <div class="col-md-6 col-12 main_header_right">
+              <figure>
+                <img
+                  src="images/404img.png"
+                  class="img-fluid"
+                  title="thapa technical"
+                />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--FOOTER-->
+ {{>footer}}
+  </body>
+</html>

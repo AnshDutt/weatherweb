@@ -1,0 +1,64 @@
+<html lang="en">
+  <head>
+  {{>headerlinks}} 
+  </head>
+  <body>
+    <!--HEADER-->
+
+ {{>navbar}}
+    <!--BODY-->
+
+    <div class="container-fluid main_header">
+      <div class="row">
+        <div class="col-md-10 col-12 mx-auto">
+
+          <div class="main_content">
+            <form class="temp_form">
+              <input type="text" id ="cityName" placeholder="City Name" autocomplete="off">
+              <input type="submit" value="search" id="submitBtn">
+            </form>
+          </div>
+          <div class="tempInformation">
+            <div class="top_layer">
+              <p id="day">Tuesday</p>
+              <p id="today_data">19 Mar</p>
+            </div>
+            <div class="main_layer">
+              <p id="city_name">Get Output Here</p>
+              <div class="middle_layer data_hide">
+                <p id="temp"><span>0</span><sup>o</sup>C</p>
+                <p id="idtemp_status"><i class="fa fa-cloud" aria-hidden="true"></i></p>
+              </div>
+            </div>
+          </div>
+
+          {{!-- <div class="row">
+            <div class="col-md-6 col-12 main_header_left">
+              <p style="color: #1e272e;"> Welcome to Weather Web</p>
+              <h1>
+                One click to 
+                <span class="txt_clr"><u> get Weather</u> </span>
+               <br> any city, any country
+              </h1>
+              <a href="/weather"><button class="btn btn-warning">Weather Me</button></a>
+            </div>
+            <div class="col-md-6 col-12 main_header_right">
+              <figure>
+                <img
+                  src="images/aboutus.jpeg"
+                  class="img-fluid"
+                  title="thapa technical"
+                />
+              </figure>
+            </div>
+          </div> --}}
+        </div>
+      </div>
+    </div>
+
+    <!--FOOTER-->
+ {{>footer}}
+ <script src="js/main.js"></script>
+
+  </body>
+</html>
