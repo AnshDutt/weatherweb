@@ -34,5 +34,5 @@ app.get("*", (req, res) => {
   });
 });
 app.listen(port, () => {
-  console.log(`WEATHER APP RUNNING ON ${port}`);
+  console.log(`WEATHER APP UP &  RUNNING ON ${port}`);
 });
